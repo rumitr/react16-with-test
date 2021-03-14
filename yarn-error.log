@@ -1,0 +1,59 @@
+Arguments: 
+  /home/rumit/.nvm/versions/node/v12.16.0/bin/node /usr/share/yarn/bin/yarn.js add parcel-bundler
+
+PATH: 
+  /opt/firefox/firefox:/opt/firefox/firefox:/home/rumit/.nvm/versions/node/v12.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/rumit/workspace/tdd/package.json: Unexpected token } in JSON at position 414
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "tdd-react",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Rumit Rout <rumitr@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/core": "^7.13.10",
+      "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+      "@babel/preset-react": "^7.12.13",
+      "babel-core": "^7.0.0-0",
+      "babel-jest": "^26.6.3",
+      "cypress": "^6.6.0",
+      "enzyme": "^3.11.0",
+      "jest": "^26.6.3",
+    },
+    "scripts": {
+      "start": "parcel serve index.html",
+      "e2e": "cypress open",
+      "unit": "jest test/**/*.spec.js"
+    },
+    "dependencies": {
+      "react": "16.14.0",
+      "react-dom": "16.14.0"
+    },
+    "jest": {
+      "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
