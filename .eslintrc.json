@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "codingitwrong",
+        "plugin:cypress/recommended"
+    ],
+    "parser": "babel-eslint",
+    "plugins": ["jest"],
+    "env": {
+        "jest/globals": true,
+        "browser": true
+    }
+}
