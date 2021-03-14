@@ -8,9 +8,11 @@
     "parcel": "^2.0.0-beta.1"
   },
   "scripts": {
-    "start": "parcel serve index.html"
+    "start": "parcel serve index.html",
+    "e2e": "cypress open"
   },
   "dependencies": {
+    "cypress": "^6.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
