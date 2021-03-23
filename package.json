@@ -1,5 +1,6 @@
 {
-  "name": "tdd-react",
+  "name": "tdd-react-starter",
+  "description": "This is a starter package containing react, typescript, babel, cypress, jest,enzyme, prettier and tailwind. It is bundled and served with parcel.",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Rumit Rout <rumitr@gmail.com>",
@@ -10,6 +11,10 @@
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "autoprefixer": "^9",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
@@ -21,13 +26,18 @@
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-jest": "^24.3.1",
     "jest": "^26.6.3",
-    "parcel-bundler": "1.12.3"
+    "parcel-bundler": "1.12.3",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "typescript": "^4.2.3"
   },
   "scripts": {
-    "start": "parcel serve index.html",
+    "start": "parcel serve public/index.html",
     "e2e": "cypress open",
     "unit": "jest test/**/*.spec.js",
-    "lint": "eslint src/**/*.js test/**/*.js"
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "clean": "rm -rf dist .cache",
+    "tsc": "tsc"
   },
   "dependencies": {
     "react": "16.14.0",
